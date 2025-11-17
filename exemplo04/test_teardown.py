@@ -3,7 +3,7 @@ import sqlalchemy
 from sqlalchemy.sql import text
 
 @pytest.fixture
-def database_connectiom():
+def database_connection():
     engine = sqlalchemy.create_engine('sqlite:///:memory:')
     connction = engine.connect()
     yield connction
