@@ -9,3 +9,8 @@ def soma_dobro(numeros):
 
 def test_soma_dobra(numeros):
     assert soma_dobro(numeros) == 30
+
+def test_soma_dobro_lista_vazia(numeros):
+    numeros.clear()
+    resultado = soma_dobro(numeros)
+    assert resultado == 0, "A soma de uma lista vazia deve ser 0"
